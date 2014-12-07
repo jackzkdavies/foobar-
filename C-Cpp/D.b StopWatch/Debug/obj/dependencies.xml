@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/IE:\Workspaces\C\stm_lib\inc /IE:\Workspaces\C\cmsis_boot /IE:\Workspaces\C /IE:\Workspaces\C\cmsis /IE:\Workspaces\C\stm_lib /IE:\Workspaces">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="14071ed8576">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="14071ed813f">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="14071ed8142">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="14071ed86e3">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="14071ed897f">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="14071ed8158">
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.c" lastModified="14071ed8591">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="14071ed8192">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="14071ed86df">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="14071ed819a">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="14071ed8197">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+</dependencies>

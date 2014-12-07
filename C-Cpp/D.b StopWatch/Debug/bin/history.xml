@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=StopWatch.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\StopWatch -TC:\CooCox\CoIDE\configuration\ProgramData\StopWatch/arm-gcc-link.ld -g">
+      <target file="StopWatch.elf" lastModified="1412f260cde">
+         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="1412f1ac9e2"/>
+         <source file="..\obj\core_cm3.o" lastModified="1412f1acb0a"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1412f1acc42"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1412f1acd99"/>
+         <source file="..\obj\main.o" lastModified="1412f2609a3"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1412f1ad019"/>
+      </target>
+   </processor>
+</history>

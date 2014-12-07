@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F100RB -DSTM32F10X_MD_VL -IE:\Workspaces\C\Assignment 2\cmsis_boot -IE:\Workspaces\C -IE:\Workspaces\C\Assignment 2\stm_lib\inc -IE:\Workspaces\C\Assignment 2\cmsis -IE:\Workspaces\C\Assignment 2 -IE:\Workspaces\C\Assignment 2\stm_lib">
+      <target file="stm32f10x_rcc.o" lastModified="14071ecb49d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1407170b575"/>
+      </target>
+      <target file="core_cm3.o" lastModified="14071ecb13c">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="1407170b64a"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="14071ecb1e1">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1407170b629"/>
+      </target>
+      <target file="startup_stm32f10x_md_vl.o" lastModified="14071ecb0a7">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="1407170b5b7"/>
+      </target>
+      <target file="main.o" lastModified="14071ecb3a1">
+         <source file="..\..\..\main.c" lastModified="14071eb5aaf"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="14071ecb309">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1407170bbff"/>
+      </target>
+   </processor>
+</history>
