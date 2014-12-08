@@ -1,0 +1,141 @@
+img.logo {
+    
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	background-color:transparent 
+}
+
+body{
+	
+	background-color:#363636;
+}
+b{
+	
+	font-family: "Consolas" ;
+	color: F0FFF0;
+}
+a.failed{
+	font-family: "Consolas" ;
+	color: F0FFF0;
+}
+h2.failed{
+	
+	font-family: "Consolas" ;
+	color: F0FFF0;
+}
+
+h1{
+	
+	font-family: "Verdana", Sans-serif;
+	color: 363636;
+
+}
+a.listViewAdd{ 
+	font-weight:bold;
+	font-family: "Verdana" ;
+	color: #363636;
+}
+.inputTitle{
+	
+	width:100%
+}
+.inputCont{
+
+	height:75%;
+	width:100%;
+}
+.inputSubmit{
+	float: bottom;
+	width:100%
+}
+.failed{
+	text-align:center;
+}
+div.body{
+	width: 100%; 
+}
+div.header{
+	width: 100%;
+	height:25%;
+}
+div.logo{
+	float: top;
+	width: 60%; 
+	
+	margin-left: auto; 
+	margin-right: auto; 
+	border-color: #363636;
+}
+img.logoImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 10px 0px 0px 40px;
+	}
+
+
+div.loginScipt{
+	position:absolute;
+	left: 80%; z-index: 1;
+	top:15%;
+	width:20%;
+	font-family: "Consolas" ;
+	color: F0FFF0;
+	}
+
+div.notes{
+	position:absolute;
+	left: 20%; 
+	width: 60%;
+	height:65%;
+	margin-left: auto; 
+	margin-right: auto; 
+	padding: 10px 10px 10px 10px;
+}
+div.binder{
+
+	float: left;
+	height:98%;
+	width: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image:url('loopwhite.png');
+	background-size:30px 30px;
+	background-repeat: repeat;
+	padding: 10px 10px 10px 10px;
+}
+
+div.note{
+	float:right;
+	width: 90%;
+	height:100%;
+	margin-left: auto; 
+	margin-right: auto; 
+	background-color:#F0FFF0;
+	border-style: solid;
+	border-color: #363636;
+	padding: 10px 10px 10px 10px;
+}
+
+div.listView{
+	font-weight:bold;
+	font-family: "Verdana" ;
+	color: #363636;
+	overflow: auto;
+	float:right;
+	width: 18%;
+	margin-left: auto; 
+	height:70%;
+	background-color:#F0FFF0;
+	border-style: solid;
+	border-color: #363636;
+	margin-top: 10px;
+}
+a{
+	font-family: "Verdana" ;
+	color: #363636;	
+}
+hr{
+	color: #363636;
+}
