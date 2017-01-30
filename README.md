@@ -1,6 +1,6 @@
 foobar-
 =======
-This is a magical folder filled with fun assignments, and code snippets for future referencing.
+This is a repository containting university assignments, and code snippets for future referencing.
 
 Author Jack Z K Davies.
 contact:
