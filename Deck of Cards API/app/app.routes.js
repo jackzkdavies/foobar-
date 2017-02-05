@@ -6,7 +6,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         url: '/',
         views: {
           '': { templateUrl: './app/shared/main/main.html'},
-          'sideBar@home': { template: './templates/assets/nav.html' }
+          'header@home': { templateUrl: './app/shared/header/header.html'},
+          'highCard@home': { templateUrl: './app/components/highCard/highCard.html', controller:'highCardController' },
+          'footer@home': { templateUrl: './app/shared/footer/footer.html' }
        }
     });
   
