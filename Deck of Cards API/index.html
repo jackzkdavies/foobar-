@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+	<link rel="import" href="builder/dist/libs.html">
+	<link rel="import" href="builder/dist/myAppSrc.html">
+
+	<script type="text/javascript">
+		angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+	</script>
+</head>
+
+<body ng-app='myApp'>
+
+	<!-- <div ui-view="sideBar"></div> -->
+<!-- <ui-view name="sideBar"></ui-view> -->
+	<div ui-view></div>
+</body>
+</html>
