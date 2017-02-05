@@ -3,8 +3,9 @@ var gulp = require('gulp');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
+var sass = require('gulp-sass');
 
-gulp.task('default', ['useref', 'libs']);
+gulp.task('default', ['useref', 'libs', 'sass']);
 
 gulp.task('useref', function(){
   return gulp.src('../myAppSrc.html')
@@ -22,3 +23,8 @@ gulp.task('libs', function(){
     .pipe(gulp.dest('dist'))
 });
 
+gulp.task('sass', function () {
+  return gulp.src('../assets/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist'));
+});
