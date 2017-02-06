@@ -109,42 +109,42 @@
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de; } }
 
-@-webkit-keyframes flash_redBlue {
+@-webkit-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@-moz-keyframes flash_redBlue {
+@-moz-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@-ms-keyframes flash_redBlue {
+@-ms-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@-o-keyframes flash_redBlue {
+@-o-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@keyframes flash_redBlue {
+@keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }

@@ -4,30 +4,31 @@
 
 $titleFont:monoton;
 @font-face {
-    font-family: LasEnter;
-    src: url(../../assets/fonts/mans-greback/LasEnter_PersonalUseOnly.ttf);
+	font-family: LasEnter;
+	src: url(../../assets/fonts/mans-greback/LasEnter_PersonalUseOnly.ttf);
 }
 
 
 @font-face {
-    font-family: monoton;
-    src: url(../../assets/fonts/monoton/Monoton-Regular.ttf);
+	font-family: monoton;
+	src: url(../../assets/fonts/monoton/Monoton-Regular.ttf);
 }
 
 
 
 body{
-	background-color:grey;
+	background-color:purple;
+	margin:0;
 }
 
 /* We tell all items to be 100% width */
 .header, .main, .aside, .footer {
-  flex: 1 100%;
+	flex: 1 100%;
 }
 
 .wrapper {
-  display: flex;
-  flex-flow: row wrap;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 /* We rely on source order for mobile-first approach
@@ -40,8 +41,8 @@ body{
 
 /* Medium screens */
 @media all and (min-width: 600px) {
-  /* We tell both sidebars to share a row */
-  .aside { flex: 1 auto; }
+	/* We tell both sidebars to share a row */
+	.aside { flex: 1 auto; }
 }
 
 /* Large screens */
@@ -56,42 +57,70 @@ body{
   .footer  { order: 4; }
 }
 
+.header {
+	background-color: purple;
+	padding:15px; 
+}
+
 .header h1{
-    font-family: $titleFont;
+	font-family: $titleFont;
 	@include bounceIn();
-    font-size: 6em;
-    font-weight: 100;
-    text-align: center;
+	font-size: 6em;
+	font-weight: 100;
+	text-align: center;
 	color: #fff;
 	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
 	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
 	animation: neon1 1.5s ease-in-out infinite alternate;
 }
+
 .header h1:hover {
 	color: #FF1177;
 	-webkit-animation: none;
 	-moz-animation: none;
 	animation: none;
 }
+
 .main{
-    text-align: center;
+	text-align: center;
 }
-.flash_RedBlue{
-	-webkit-animation: flash_redBlue 1s infinite;
-    -moz-animation: flash_redBlue 1s infinite;
-    -o-animation: flash_redBlue 1s infinite;
-    -ms-animation: flash_redBlue 1s infinite;
-    animation: flash_redBlue 1s infinite;
+
+.flash_greenWhite{
+	-webkit-animation: flash_greenWhite 1s infinite;
+	-moz-animation: flash_greenWhite 1s infinite;
+	-o-animation: flash_greenWhite 1s infinite;
+	-ms-animation: flash_greenWhite 1s infinite;
+	animation: flash_greenWhite 1s infinite;
 }
+
 h2{
-    font-family: LasEnter;
+	font-family: LasEnter;
 	@include bounceIn();
 	-webkit-animation: neon6 1.5s ease-in-out infinite alternate;
 	-moz-animation: neon6 1.5s ease-in-out infinite alternate;
 	animation: neon6 1.5s ease-in-out infinite alternate;
 
 }
+p{ 
+	color:white
+}
 
 .small{
 	font-size:0.75em
+}
+
+button{
+	background-color: #4CAF50;
+    border: solid 3px #4CAF50;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing:1em;
+	letter-spacing: 0.25em;
+    font-weight: 800;
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon3 1.5s ease-in-out infinite alternate;
+	animation: neon3 1.5s ease-in-out infinite alternate;
+	cursor:pointer;
 }

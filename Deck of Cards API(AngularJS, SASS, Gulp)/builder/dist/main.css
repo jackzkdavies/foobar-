@@ -8274,45 +8274,45 @@
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de; } }
 
-@-webkit-keyframes flash_redBlue {
+@-webkit-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@-moz-keyframes flash_redBlue {
+@-moz-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@-ms-keyframes flash_redBlue {
+@-ms-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@-o-keyframes flash_redBlue {
+@-o-keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
-@keyframes flash_redBlue {
+@keyframes flash_greenWhite {
   0% {
-    color: red; }
+    color: green; }
   50% {
-    color: blue; }
+    color: white; }
   100% {
-    color: red; } }
+    color: green; } }
 
 @font-face {
   font-family: LasEnter;
@@ -8323,7 +8323,8 @@
   src: url(../../assets/fonts/monoton/Monoton-Regular.ttf); }
 
 body {
-  background-color: grey; }
+  background-color: purple;
+  margin: 0; }
 
 /* We tell all items to be 100% width */
 .header, .main, .aside, .footer {
@@ -8361,6 +8362,10 @@ body {
     order: 3; }
   .footer {
     order: 4; } }
+
+.header {
+  background-color: purple;
+  padding: 15px; }
 
 .header h1 {
   font-family: monoton;
@@ -8416,12 +8421,12 @@ body {
 .main {
   text-align: center; }
 
-.flash_RedBlue {
-  -webkit-animation: flash_redBlue 1s infinite;
-  -moz-animation: flash_redBlue 1s infinite;
-  -o-animation: flash_redBlue 1s infinite;
-  -ms-animation: flash_redBlue 1s infinite;
-  animation: flash_redBlue 1s infinite; }
+.flash_greenWhite {
+  -webkit-animation: flash_greenWhite 1s infinite;
+  -moz-animation: flash_greenWhite 1s infinite;
+  -o-animation: flash_greenWhite 1s infinite;
+  -ms-animation: flash_greenWhite 1s infinite;
+  animation: flash_greenWhite 1s infinite; }
 
 h2 {
   font-family: LasEnter;
@@ -8464,5 +8469,23 @@ h2 {
   -moz-animation: neon6 1.5s ease-in-out infinite alternate;
   animation: neon6 1.5s ease-in-out infinite alternate; }
 
+p {
+  color: white; }
+
 .small {
   font-size: 0.75em; }
+
+button {
+  background-color: #4CAF50;
+  border: solid 3px #4CAF50;
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: 1em;
+  letter-spacing: 0.25em;
+  font-weight: 800;
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+  cursor: pointer; }

@@ -3,7 +3,7 @@ myApp.factory('HighCardService', function ($http, $q) {
 	 	money: 0,
 	 	bet: 10,
 		deck: {
-			// deck_id:'u9zoyq44icf4'
+			deck_id:'u9zoyq44icf4'
 		},
 		lastDraw : [],
 		cards:52,
