@@ -1,0 +1,97 @@
+
+@import "animate.scss-master/animate.scss";
+@import "neon.scss";
+
+$titleFont:monoton;
+@font-face {
+    font-family: LasEnter;
+    src: url(../../assets/fonts/mans-greback/LasEnter_PersonalUseOnly.ttf);
+}
+
+
+@font-face {
+    font-family: monoton;
+    src: url(../../assets/fonts/monoton/Monoton-Regular.ttf);
+}
+
+
+
+body{
+	background-color:grey;
+}
+
+/* We tell all items to be 100% width */
+.header, .main, .aside, .footer {
+  flex: 1 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .main { flex: 2 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+.header h1{
+    font-family: $titleFont;
+	@include bounceIn();
+    font-size: 6em;
+    font-weight: 100;
+    text-align: center;
+	color: #fff;
+	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+	animation: neon1 1.5s ease-in-out infinite alternate;
+}
+.header h1:hover {
+	color: #FF1177;
+	-webkit-animation: none;
+	-moz-animation: none;
+	animation: none;
+}
+.main{
+    text-align: center;
+}
+.flash_RedBlue{
+	-webkit-animation: flash_redBlue 1s infinite;
+    -moz-animation: flash_redBlue 1s infinite;
+    -o-animation: flash_redBlue 1s infinite;
+    -ms-animation: flash_redBlue 1s infinite;
+    animation: flash_redBlue 1s infinite;
+}
+h2{
+    font-family: LasEnter;
+	@include bounceIn();
+	-webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon6 1.5s ease-in-out infinite alternate;
+	animation: neon6 1.5s ease-in-out infinite alternate;
+
+}
+
+.small{
+	font-size:0.75em
+}

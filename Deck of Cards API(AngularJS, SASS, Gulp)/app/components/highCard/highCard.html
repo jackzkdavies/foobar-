@@ -1,0 +1,54 @@
+<div class="wrapper">
+
+	<div class="main">
+		<div ng-show='gameState.money <= 0 && gameState.deck.deck_id' class="flash_RedBlue">
+			<h2>GAME OVER!!!</h2>
+			<p> YOU LOST ALL YOUR MONEY!!!!!!!!!!!!!!!!!!</p>
+		</div>
+
+		<div ng-show='gameState.money <= 0'>
+			<!-- <high-score highScores='gameState.highScores'></high-score> -->
+			<h1>High Scores</h1>
+			<p ng-repeat="player in gameState.highScores | orderBy:'-score'">{{player.name}}: {{player.score}}</p>
+			<button ng-click='startNewGame()'>Start New Game</button>
+			<p class="small">This highscore list is an example of angulars orderBy.</p>
+		</div>
+
+		<div ng-show='gameState.cards <= 0'>
+			<h1>GAME OVER!</h1>
+			<p>You scored ${{gameState.money}}</p>
+			<p>Enter your name! <input ng-model='gameState.playerName'></input>
+			<button ng-click='saveHighScore();startNewGame()'>Start New Game</button>
+		</div>
+
+
+		<div ng-show='gameState.money > 0 && gameState.cards > 0 '>
+			<p>Money: ${{gameState.money}}</p>
+			<p>Bet: $
+				<input ng-model='gameState.bet'></input>
+			</p>
+			<p>Plays left: {{gameState.cards/2}}
+			<p>Winner: {{gameState.winner}}</p>
+			<img ng-src='{{gameState.lastDraw[0].image}}'>
+			<img ng-src='{{gameState.lastDraw[1].image}}'>
+			<br>
+			<button ng-click='takeTurn()'>Take Turn</button>
+
+			<br>
+			<p>
+				<span ng-repeat='winner in gameState.winners track by $index'> {{winner}} |</span>
+			</p>
+			<p ng-if='gameState.winners.length > 0' class="small">This list of winners shows the need to index list elements.</p>
+		</div>
+	</div>
+
+	<aside class="aside aside-1"></aside>
+	<aside class="aside aside-2">
+		<div ng-show='gameState.money > 0'>
+			<!-- <high-score highScores='gameState.highScores'></high-Score> -->
+			<h1>High Scores</h1>
+			<p ng-repeat="player in gameState.highScores | orderBy:'-score'">{{player.name}}: {{player.score}}</p>
+			<p class="small">This highscore list is an example of angulars orderBy.</p>
+		</div>
+	</aside>
+</div>

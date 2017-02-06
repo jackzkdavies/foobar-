@@ -1,0 +1,4 @@
+<h1>High Scores</h1>
+<p ng-repeat="player in localValue | orderBy:'-score'">{{player.name}}: {{player.score}}</p>
+<button ng-click='startNewGame()'>Start New Game</button>
+<p class="small">This highscore list is an example of angulars orderBy.</p>
